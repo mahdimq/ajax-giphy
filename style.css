@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(5, 0, 95);
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+
+#search {
+  display: block;
+  margin: 0 auto;
+  padding: 0.75em 1.25em;
+  width: 80%;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  font-family: 'Trebuchet MS',
+    'Lucida Sans Unicode',
+    'Lucida Grande',
+    'Lucida Sans',
+    Arial,
+    sans-serif;
+  font-size: 1em;
+}
+
+button {
+  display: block;
+  margin: 0.5em auto;
+  padding: 0.75em 1.25em;
+  width: 80%;
+  border-radius: 3px;
+  border: none;
+  font-family: 'Trebuchet MS',
+    'Lucida Sans Unicode',
+    'Lucida Grande',
+    'Lucida Sans',
+    Arial,
+    sans-serif;
+  font-size: 1em;
+}
+
+.btn {
+  background-color: lightskyblue;
+  color: rgb(68, 65, 65);
+}
+
+.delete-btn {
+  background-color: tomato;
+  color: rgb(68, 65, 65);
+}
+
+img {
+  max-width: 400px;
+  width: 100%;
+  margin: 0.5em auto;
+  padding: 0.5em;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 620px) {
+  #search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    width: 25%;
+    margin-left: 1em;
+  }
+
+  #search {
+    padding: 1.3em;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .col {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  img {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 910px) {
+  button {
+    width: 30%;
+    margin-left: 1em;
+  }
+
+  #search {
+    padding: 0.75em 1.25em;
+  }
+
+  img {
+    max-width: 350px;
+    width: 100%;
+  }
+}
